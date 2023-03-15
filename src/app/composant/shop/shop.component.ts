@@ -9,13 +9,16 @@ export class ShopComponent {
 
   title = "api";
   allProduct:any;
-  viewData:any;
-  filtred:any;
+  viewData:any; 
+  numberOfPage:any;
+  currentPage = 1;
+  itemsPerPage = 6;
   constructor(private _apiservie:ProductService){}
   ngOnInit(){
     this._apiservie.getProduct().subscribe(res=>{
       this.allProduct=res
       this.viewData=this.allProduct;
+      this.numberOfPage=this.allProduct.length/this.itemsPerPage
     })
 
   }
