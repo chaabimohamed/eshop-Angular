@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class SingleProdService {
 
   constructor(private _http:HttpClient) {}
-  getProduct(){
-    return this._http.get('http://localhost:3000/product/2');
+  getProductById(id:Number){
+    return this._http.get(`http://localhost:3000/product/`+id);
   }
 }

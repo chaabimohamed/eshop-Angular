@@ -17,7 +17,8 @@ const routes: Routes = [
   {path:'prod',component:SingleProductPageComponent},
   {path:'men',component:MenShopComponent},
   {path:'women',component:WomenShopComponent},
-  {path:'kids',component:KidsShopComponent}
+  {path:'kids',component:KidsShopComponent},
+  {path:'prod/:productId',component:SingleProductPageComponent}
 ];
 
 @NgModule({

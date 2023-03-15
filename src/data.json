@@ -1,5 +1,18 @@
 {
     "product":[
+        {
+            "id":2,
+            "title":"product B",
+            "prix":30,
+            "brand":"H&M",
+            "image":["../../../assets/images/product_single_01.jpg","../../../assets/images/product_single_02.jpg","../../../assets/images/product_single_03.jpg","../../../assets/images/product_single_04.jpg","../../../assets/images/product_single_05.jpg","../../../assets/images/product_single_06.jpg","../../../assets/images/product_single_07.jpg"],
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.",
+            "color":["Black","White"],
+            "size":["s","m","xl","l"],
+            "category":"women",
+            "sub-category":"Bottoms",
+            "star":3
+        },
      {
         "id":3,
         "title":"product c",
