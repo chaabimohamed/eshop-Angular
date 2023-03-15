@@ -12,15 +12,10 @@
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bag</a></li>
-                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
-                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
-                            <li><a class="text-decoration-none" href="#">Jewelry</a></li>
-                            <li><a class="text-decoration-none" href="#">Shoes</a></li>
-                            <li><a class="text-decoration-none" href="#">Suits</a></li>
-                            <li><a class="text-decoration-none" href="#">Tops</a></li>
-                            <li><a class="text-decoration-none" href="#">Boys</a></li>
-                            <li><a class="text-decoration-none" href="#">Girls</a></li>
+                            <li *ngFor="let sigCat of categorys">
+                                <a class="text-decoration-none" (click)="filter(sigCat,'sub-category')" >{{sigCat}}</a>
+                            </li>
+                        
                         </ul>
                     </li>
                 </ul>
@@ -83,4 +78,6 @@
 
         </div>
     </div>
+    
     <!-- End Content -->
+    

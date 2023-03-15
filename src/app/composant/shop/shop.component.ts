@@ -10,20 +10,19 @@ export class ShopComponent {
   title = "api";
   allProduct:any;
   viewData:any; 
-  numberOfPage:any;
-  currentPage = 1;
-  itemsPerPage = 6;
+  categorys:any;
   constructor(private _apiservie:ProductService){}
   ngOnInit(){
     this._apiservie.getProduct().subscribe(res=>{
       this.allProduct=res
       this.viewData=this.allProduct;
-      this.numberOfPage=this.allProduct.length/this.itemsPerPage
+      this.categorys=this.allProduct.map((p:any)=>p["sub-category"])
+
     })
 
   }
-  filter(element:string){
-    this.viewData = this.allProduct.filter((p:any)=>p.category==element);
+  filter(element:string,by:string){
+    this.viewData = this.allProduct.filter((p:any)=>p[by]==element);
   }
   max = 5;
   isReadonly = true;
