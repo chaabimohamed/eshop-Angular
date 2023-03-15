@@ -47,17 +47,17 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="{{viewData.image[3]}}" alt="Product Image 4">
+                                            <img class="card-img img-fluid" src="{{viewData.image[4]}}" alt="Product Image 4">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="{{viewData.image[3]}}" alt="Product Image 5">
+                                            <img class="card-img img-fluid" src="{{viewData.image[5]}}" alt="Product Image 5">
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#">
-                                            <img class="card-img img-fluid" src="{{viewData.image[3]}}" alt="Product Image 6">
+                                            <img class="card-img img-fluid" src="{{viewData.image[6]}}" alt="Product Image 6">
                                         </a>
                                     </div>
                                 </div>
@@ -84,12 +84,10 @@
                     <div class="card-body">
                         <h1 class="h2">{{viewData.title}}</h1>
                         <p class="h3 py-2">${{viewData.prix}}</p>
-                        <p class="py-2">
-                            <i class="fa fa-star text-warning"></i>
-                            <!-- <i class="fa fa-star text-warning"></i> -->
-                            <!-- <i class="fa fa-star text-secondary"></i> -->
+                        <!-- <p class="py-2"> -->
+                            <rating class="text-warning"  style="font-size: 40px;" [(ngModel)]="viewData.star" [max]="max" [readonly]="isReadonly">
+                            </rating>
                             <span class="list-inline-item text-dark">Rating  {{viewData.star}}</span>
-                        </p>
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <h6>Brand:</h6>

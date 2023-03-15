@@ -13,5 +13,7 @@ export class SingleProdComponent {
     this._apiservie.getProduct().subscribe(res=>{
       this.viewData=res
     })}
+  max = 5;
+  isReadonly = true;
 
 }
