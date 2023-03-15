@@ -12,12 +12,15 @@
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" (click)="filter('bag')">Bag</a></li>
-                            <li><a class="text-decoration-none" (click)="filter('sweather')">Sweather</a></li>
-                            <li><a class="text-decoration-none" (click)="filter('sunglass')">Sunglass</a></li>
-                            <li><a class="text-decoration-none" (click)="filter('shoes')">Shoes</a></li>
-                            <li><a class="text-decoration-none" (click)="filter('suits')">Suits</a></li>
-                            <li><a class="text-decoration-none" (click)="filter('tops')">Tops</a></li>
+                            <li><a class="text-decoration-none" href="#">Bag</a></li>
+                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
+                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                            <li><a class="text-decoration-none" href="#">Jewelry</a></li>
+                            <li><a class="text-decoration-none" href="#">Shoes</a></li>
+                            <li><a class="text-decoration-none" href="#">Suits</a></li>
+                            <li><a class="text-decoration-none" href="#">Tops</a></li>
+                            <li><a class="text-decoration-none" href="#">Boys</a></li>
+                            <li><a class="text-decoration-none" href="#">Girls</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -43,7 +46,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4" *ngFor="let product of viewData">
+                    <div class="col-md-4" *ngFor="let product of viewData | paginate: { itemsPerPage: 10, currentPage: p }">
+    
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="{{product.image}}">
@@ -67,31 +71,14 @@
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                    <li>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-warning fa fa-star"></i>
-                                        <i class="text-muted fa fa-star"></i>
-                                        <i class="text-muted fa fa-star"></i>
-                                        <i class="text-muted fa fa-star"></i>
-                                    </li>
+                                    <rating class="text-warning"  style="font-size: 40px;" [(ngModel)]="product.star" [max]="max" [readonly]="isReadonly">
+                                    </rating>
                                 </ul>
                                 <p class="text-center mb-0">${{product.prix}}</p>
                             </div>
                         </div>
-                    </div>
-                <!-- <div div="row">
-                    <ul class="pagination pagination-lg justify-content-end">
-                        <li class="page-item disabled">
-                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
-                        </ li>
-                    </ul>
-                </div> -->
+                    </div>    
+                      <pagination-controls (pageChange)="p = $event"></pagination-controls>
             </div>
 
         </div>

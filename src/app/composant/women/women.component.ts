@@ -24,4 +24,7 @@ export class WomenComponent {
   filter(element:string){
     this.viewData = this.allProduct.filter((p:any)=>p["sub-category"]==element);
   }
+  max = 5;
+  isReadonly = true;
+  p: number = 1;
 }

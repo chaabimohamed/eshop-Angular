@@ -26,5 +26,6 @@ export class ShopComponent {
     this.viewData = this.allProduct.filter((p:any)=>p.category==element);
   }
   max = 5;
-  isReadonly = true;  
+  isReadonly = true;
+  p: number = 1;
 }
