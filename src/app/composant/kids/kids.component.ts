@@ -27,5 +27,5 @@ export class KidsComponent {
   }
   max = 5;
   isReadonly = true;
-  p: number = 1;
+  p: number = 1; 
 }

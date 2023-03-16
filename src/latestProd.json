@@ -1,0 +1,33 @@
+{
+    "product":[
+        {
+            "id":2,
+            "title":"product B",
+            "prix":30,
+            "brand":"H&M",
+            "image":"../../../assets/images/product_single_01.jpg",
+            "sub-category":"Bottoms",
+            "star":3
+        },
+     {
+        "id":3,
+        "title":"product c",
+        "prix":20,
+        "brand":"H&M",
+        "image":"../../../assets/images/shop_02.jpg",
+        "sub-category":"Bottoms",
+        "star":3
+
+
+    }
+    ,
+     {
+        "id":4,
+        "title":"product D",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_03.jpg",
+        "sub-category":"bag",
+        "star":3
+
+    }]
+}

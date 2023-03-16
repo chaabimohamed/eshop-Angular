@@ -1,0 +1,126 @@
+{
+    "product":[
+        {
+            "id":2,
+            "title":"product B",
+            "prix":30,
+            "brand":"H&M",
+            "image":"../../../assets/images/shop_09.jpg",
+            "sub-category":"Bottoms",
+            "star":3
+        },
+     {
+        "id":3,
+        "title":"product c",
+        "prix":20,
+        "brand":"H&M",
+        "image":"../../../assets/images/shop_02.jpg",
+        "sub-category":"Bottoms",
+        "star":3
+
+
+    }
+    ,
+     {
+        "id":4,
+        "title":"product D",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_03.jpg",
+        "sub-category":"bag",
+        "star":3
+
+    },
+    {
+        "id":5,
+        "title":"product E",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_04.jpg",
+        "sub-category":"Denim",
+        "star":3
+
+    },
+    {
+        "id":6,
+        "title":"product F",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_05.jpg",
+        "category":"women",
+        "sub-category":"Shoes"
+        ,"star":3
+        
+    },
+    {
+        "id":7,
+        "title":"product G",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_06.jpg",
+        "sub-category":"Accs",
+        "star":4
+
+    },
+    {
+        "id":8,
+        "title":"product H",
+        "prix":20,
+        "brand":"H&M","image":"../../../assets/images/shop_07.jpg",
+        "category":"women",
+        "sub-category":"Jewelry",
+        "star":5
+
+    }
+    ,
+    {
+        "id":9,
+        "title":"product J",
+        "prix":20,
+        "brand":"H&M",
+        "image":"../../../assets/images/shop_08.jpg",
+        "sub-category":"tops",
+        "star":2
+
+    }
+    ,
+    {
+        "id":10,
+        "title":"product K",
+        "prix":200,
+        "brand":"Tommy Hilfiger",
+        "image":"../../../assets/images/shop_09.jpg",
+        "sub-category":"Bottoms",
+        "star":4
+
+    }
+    ,
+    {
+        "id":11,
+        "title":"product KA",
+        "prix":180,
+        "brand":"Ralph Lauren",
+        "image":"../../../assets/images/shop_03.jpg",
+        "sub-category":"Shoes",
+        "star":4
+
+    }
+    ,
+    {
+        "id":12,
+        "title":"product AA",
+        "prix":190,
+        "brand":"Diesel",
+        "image":"../../../assets/images/shop_02.jpg",
+        "sub-category":"Suits",
+        "star":2
+
+    }
+    ,
+    {
+        "id":13,
+        "title":"product AA",
+        "prix":200,
+        "brand":"Calvin Kleins",
+        "image":"../../../assets/images/shop_06.jpg",
+        "sub-category":"Suits",
+        "star":4
+
+    }]
+}

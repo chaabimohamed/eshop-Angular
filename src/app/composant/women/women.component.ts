@@ -30,4 +30,4 @@ export class WomenComponent {
   max = 5;
   isReadonly = true;
   p: number = 1;
-}
+} 

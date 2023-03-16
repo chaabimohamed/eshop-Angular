@@ -22,7 +22,7 @@ export class MenComponent {
       this.categorys=this.allProduct.map((p:any)=>p["sub-category"])
     })
 
-  }
+  } 
   filter(element:string,by:string){
     this.viewData = this.allProduct.filter((p:any)=>p[by]==element);
   }
