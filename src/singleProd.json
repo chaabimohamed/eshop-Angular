@@ -1,4 +1,5 @@
 {
+    "product":{
     "id":2,
     "title":"product B",
     "prix":30,
@@ -10,4 +11,5 @@
     "category":"women",
     "sub-category":"Bottoms",
     "star":3
+    }
 }

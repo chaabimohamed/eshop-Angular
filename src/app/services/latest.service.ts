@@ -8,7 +8,7 @@ export class LatestService {
 
   constructor(private _http:HttpClient) {}
   getLatest(){
-    return this._http.get('http://localhost:3000/product');
+    return this._http.get('http://localhost:3000/latest');
   }
 
 }
