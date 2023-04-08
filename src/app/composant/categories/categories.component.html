@@ -1,0 +1,29 @@
+    
+    <h1 class="h2 pb-4">Categories</h1>
+    <ul class="list-unstyled templatemo-accordion">
+        <!-- filter by product -->
+        <li class="pb-3">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none">
+                Product
+                <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="collapse show list-unstyled pl-3">
+                <li *ngFor="let category of categorys">
+                    <a class="text-decoration-none" (click)="filter(category,'sub-category')" >{{category}}</a>
+                </li>
+            </ul>
+        </li>
+        <!-- filter by brand -->
+        <li class="pb-3">
+            <a class="collapsed d-flex justify-content-between h3 text-decoration-none">
+                Brand
+                <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="collapse show list-unstyled pl-3">
+                <li *ngFor="let brand of brands">
+                    <a class="text-decoration-none" (click)="filter(brand,'brand')" >{{brand}}</a>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>

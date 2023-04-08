@@ -5,8 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class FiltersFunctionService {
 
+
+  filter(products:any,element:string,by:string){
+    return products.filter((p:any)=>p[by]==element);
+  }
   constructor() { 
-    
+  
   }
 
 }

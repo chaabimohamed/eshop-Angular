@@ -1,0 +1,20 @@
+    <!-- Start Content -->
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-3">
+                    <app-categories [brands]="brands" [categorys]="categorys" [data]="allProduct" (dataEvent)="resiveData($event)"></app-categories>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <app-shop-nav></app-shop-nav>
+                    <div>
+            </div>
+            </div>
+            <app-display-products [data]="viewData"></app-display-products>
+               
+        </div>
+    </div>
+    <!-- End Content -->
